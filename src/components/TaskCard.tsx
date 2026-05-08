@@ -68,7 +68,7 @@ const TaskCard: React.FC<TaskCardProps> = ({
           <div className="task-column imperative">
             <div className="column-label imperative-label">
               <span className="label-dot imperative-dot"></span>
-              🔴 Імперативно
+               Імперативно
             </div>
             {activeTab === 'demo' ? (
               <div className="demo-area">{imperativeDemo}</div>
@@ -86,7 +86,7 @@ const TaskCard: React.FC<TaskCardProps> = ({
           <div className="task-column declarative">
             <div className="column-label declarative-label">
               <span className="label-dot declarative-dot"></span>
-              🟢 Декларативно
+               Декларативно
             </div>
             {activeTab === 'demo' ? (
               <div className="demo-area">{declarativeDemo}</div>
@@ -127,10 +127,10 @@ const TaskCard: React.FC<TaskCardProps> = ({
           </div>
           <div className="verdict-text">
             {declarativeWins > imperativeWins
-              ? '🟢 Декларативний підхід ефективніший'
+              ? ' Декларативний підхід ефективніший'
               : imperativeWins > declarativeWins
-                ? '🔴 Імперативний підхід ефективніший'
-                : '🟡 Підходи рівноцінні'}
+                ? ' Імперативний підхід ефективніший'
+                : 'Підходи рівноцінні'}
           </div>
         </div>
       </div>
