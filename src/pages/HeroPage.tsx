@@ -35,7 +35,7 @@ const HeroPage: React.FC = () => {
           <div className="approaches-grid">
             {/* Imperative */}
             <div className="approach-card glass-card animate-fade-in-up delay-2" id="approach-imperative">
-              <div className="approach-icon imperative-icon">🔴</div>
+              <div className="approach-icon imperative-icon"></div>
               <h2 className="approach-title">Імперативний підхід</h2>
               <p className="approach-tagline">«ЯК це зробити»</p>
               <div className="approach-description">
@@ -69,7 +69,7 @@ const HeroPage: React.FC = () => {
 
             {/* Declarative */}
             <div className="approach-card glass-card animate-fade-in-up delay-3" id="approach-declarative">
-              <div className="approach-icon declarative-icon">🟢</div>
+              <div className="approach-icon declarative-icon"></div>
               <h2 className="approach-title">Декларативний підхід</h2>
               <p className="approach-tagline">«ЩО потрібно отримати»</p>
               <div className="approach-description">

@@ -137,13 +137,13 @@ const ComparisonPage: React.FC = () => {
         {/* Summary */}
         <div className="comparison-summary animate-fade-in-up delay-5">
           <div className="summary-card glass-card imperative-summary">
-            <div className="summary-label">🔴 Імперативний</div>
+            <div className="summary-label"> Імперативний</div>
             <div className="summary-score">{imperativeAvg}</div>
             <div className="summary-sub">середній бал</div>
           </div>
           <div className="summary-vs">VS</div>
           <div className="summary-card glass-card declarative-summary">
-            <div className="summary-label">🟢 Декларативний</div>
+            <div className="summary-label"> Декларативний</div>
             <div className="summary-score">{declarativeAvg}</div>
             <div className="summary-sub">середній бал</div>
           </div>
