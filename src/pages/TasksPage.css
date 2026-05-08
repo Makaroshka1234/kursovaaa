@@ -1,0 +1,51 @@
+.tasks-page {
+  padding: var(--space-3xl) 0 var(--space-4xl);
+}
+
+.tasks-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.tasks-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  margin-bottom: var(--space-md);
+}
+
+.tasks-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .tasks-page {
+    padding: var(--space-xl) 0 var(--space-3xl);
+  }
+
+  .tasks-header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .tasks-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tasks-page {
+    padding: var(--space-lg) 0 var(--space-2xl);
+  }
+
+  .tasks-header {
+    margin-bottom: var(--space-lg);
+  }
+}

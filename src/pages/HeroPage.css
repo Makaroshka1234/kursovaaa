@@ -1,0 +1,293 @@
+.hero-page {
+  padding-bottom: var(--space-4xl);
+}
+
+/* ========== HERO SECTION ========== */
+.hero-section {
+  text-align: center;
+  padding: var(--space-4xl) 0 var(--space-3xl);
+  position: relative;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-full);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-purple);
+  box-shadow: 0 0 10px var(--accent-purple);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.hero-vs {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--space-xl);
+  line-height: 1.7;
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ========== APPROACHES ========== */
+.approaches-section {
+  padding: var(--space-2xl) 0;
+}
+
+.approaches-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+}
+
+.approach-card {
+  padding: var(--space-xl);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.approach-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+#approach-imperative::before {
+  background: linear-gradient(90deg, var(--imperative-color), transparent);
+}
+
+#approach-declarative::before {
+  background: linear-gradient(90deg, var(--declarative-color), transparent);
+}
+
+.approach-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.approach-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.approach-tagline {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: var(--space-md);
+}
+
+.approach-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.approach-description strong {
+  color: var(--text-primary);
+}
+
+.approach-example {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+  border-left: 3px solid var(--accent-purple);
+}
+
+.example-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+}
+
+.example-text {
+  color: var(--text-secondary);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.approach-traits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.trait {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.trait-icon {
+  font-size: 1.1rem;
+}
+
+/* ========== KEY IDEA ========== */
+.key-idea-section {
+  padding: var(--space-2xl) 0;
+}
+
+.key-idea {
+  padding: var(--space-xl);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.key-idea::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+}
+
+.key-idea-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.key-idea h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.key-idea p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.key-idea strong {
+  color: var(--accent-cyan);
+}
+
+.key-idea em {
+  color: var(--text-primary);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .approaches-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .hero-section {
+    padding: var(--space-2xl) 0 var(--space-xl);
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .approach-card {
+    padding: var(--space-lg);
+  }
+
+  .approach-title {
+    font-size: 1.25rem;
+  }
+
+  .key-idea {
+    padding: var(--space-lg);
+  }
+
+  .key-idea h3 {
+    font-size: 1.2rem;
+  }
+
+  .key-idea p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: var(--space-xl) 0;
+  }
+
+  .approach-icon {
+    font-size: 2rem;
+  }
+
+  .approach-title {
+    font-size: 1.1rem;
+  }
+
+  .approach-tagline {
+    font-size: 0.95rem;
+  }
+
+  .trait {
+    font-size: 0.85rem;
+  }
+}
