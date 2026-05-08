@@ -8,10 +8,7 @@ const HeroPage: React.FC = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container">
-          <div className="hero-badge animate-fade-in-up">
-            <span className="badge-dot"></span>
-            React Навчальний Ресурс
-          </div>
+         
           <h1 className="hero-title animate-fade-in-up delay-1">
             <span className="gradient-text">Імперативний</span>
             <span className="hero-vs">vs</span>
@@ -23,10 +20,10 @@ const HeroPage: React.FC = () => {
           </p>
           <div className="hero-cta animate-fade-in-up delay-3">
             <Link to="/tasks" className="btn btn-primary" id="cta-tasks">
-              ⚡ Перейти до задач
+               Перейти до задач
             </Link>
             <Link to="/comparison" className="btn btn-secondary" id="cta-compare">
-              📊 Порівняння
+              Порівняння
             </Link>
           </div>
         </div>

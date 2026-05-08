@@ -4,15 +4,12 @@
 }
 
 .demo-counter .count-display {
-  font-size: 3rem;
-  font-weight: 800;
+  font-size: 2.8rem;
+  font-weight: 700;
   margin: var(--space-md) 0;
   font-family: var(--font-mono);
-  transition: transform 0.15s ease, color 0.3s ease;
-}
-
-.demo-counter .count-display.bump {
-  transform: scale(1.2);
+  transition: color 0.2s ease;
+  letter-spacing: -0.03em;
 }
 
 .demo-counter .counter-buttons {
@@ -21,71 +18,70 @@
   justify-content: center;
 }
 
-.demo-counter .counter-buttons button,
-.demo-btn {
-  padding: var(--space-sm) var(--space-lg);
+.demo-counter .counter-buttons button {
+  padding: 7px var(--space-lg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  background: var(--bg-glass);
+  background: var(--bg-card);
   color: var(--text-primary);
   font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
-.demo-counter .counter-buttons button:hover,
-.demo-btn:hover {
-  background: var(--accent-purple-dim);
-  border-color: var(--accent-purple);
+.demo-counter .counter-buttons button:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
 }
 
 /* Filter demo */
 .demo-filter .filter-input {
   width: 100%;
-  padding: var(--space-sm) var(--space-md);
+  padding: 8px var(--space-md);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 0.9rem;
   margin-bottom: var(--space-md);
-  transition: border-color var(--transition-fast);
   outline: none;
+  transition: border-color var(--transition-fast);
 }
 
 .demo-filter .filter-input:focus {
-  border-color: var(--accent-purple);
-  box-shadow: 0 0 0 3px var(--accent-purple-dim);
+  border-color: var(--accent);
 }
 
 .demo-filter .filter-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: 2px;
   max-height: 160px;
   overflow-y: auto;
 }
 
 .demo-filter .filter-item {
-  padding: var(--space-sm) var(--space-md);
-  background: rgba(255, 255, 255, 0.03);
+  padding: 6px var(--space-md);
+  background: var(--bg-primary);
   border-radius: var(--radius-sm);
   font-size: 0.85rem;
+  color: var(--text-secondary);
   border: 1px solid transparent;
   transition: all var(--transition-fast);
 }
 
 .demo-filter .filter-item:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--bg-card-hover);
   border-color: var(--border-color);
+  color: var(--text-primary);
 }
 
 .demo-filter .filter-count {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
   margin-top: var(--space-sm);
 }
@@ -100,44 +96,41 @@
 .demo-form .form-group {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: 4px;
 }
 
 .demo-form .form-label {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .demo-form .form-input {
-  padding: var(--space-sm) var(--space-md);
+  padding: 8px var(--space-md);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 0.9rem;
   outline: none;
-  transition: all var(--transition-fast);
+  transition: border-color var(--transition-fast);
 }
 
 .demo-form .form-input:focus {
-  border-color: var(--accent-purple);
-  box-shadow: 0 0 0 3px var(--accent-purple-dim);
+  border-color: var(--accent);
 }
 
 .demo-form .form-input.error {
   border-color: var(--imperative-color);
-  box-shadow: 0 0 0 3px var(--imperative-dim);
 }
 
 .demo-form .form-input.success {
   border-color: var(--declarative-color);
-  box-shadow: 0 0 0 3px var(--declarative-dim);
 }
 
 .demo-form .form-error {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--imperative-color);
 }
 
@@ -149,30 +142,29 @@
   padding: var(--space-sm);
   background: var(--declarative-dim);
   border-radius: var(--radius-sm);
+  border: 1px solid var(--declarative-border);
 }
 
 .demo-form .form-submit {
-  padding: var(--space-sm) var(--space-lg);
+  padding: 8px var(--space-lg);
   border: none;
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  background: var(--accent);
   color: white;
   font-family: var(--font-sans);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
 .demo-form .form-submit:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+  background: #7c7cff;
 }
 
 .demo-form .form-submit:disabled {
-  opacity: 0.5;
+  opacity: 0.4;
   cursor: not-allowed;
-  transform: none;
 }
 
 /* Todo demo */
@@ -189,10 +181,10 @@
 
 .todo-input {
   flex: 1;
-  padding: var(--space-sm) var(--space-md);
+  padding: 8px var(--space-md);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-sans);
   font-size: 0.9rem;
@@ -201,36 +193,35 @@
 }
 
 .todo-input:focus {
-  border-color: var(--accent-purple);
-  box-shadow: 0 0 0 3px var(--accent-purple-dim);
+  border-color: var(--accent);
 }
 
 .todo-add-btn {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  background: var(--accent);
   color: white;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: background var(--transition-fast);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .todo-add-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+  background: #7c7cff;
 }
 
 .todo-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: 2px;
   max-height: 200px;
   overflow-y: auto;
 }
@@ -239,124 +230,72 @@
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  padding: var(--space-sm) var(--space-md);
-  background: rgba(255, 255, 255, 0.03);
+  padding: 7px var(--space-md);
+  background: var(--bg-primary);
   border-radius: var(--radius-sm);
   border: 1px solid transparent;
-  transition: all var(--transition-fast);
+  transition: border-color var(--transition-fast);
 }
 
 .todo-item:hover {
-  background: rgba(255, 255, 255, 0.06);
   border-color: var(--border-color);
 }
 
 .todo-item.done {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .todo-checkbox {
-  width: 18px;
-  height: 18px;
-  accent-color: var(--accent-purple);
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
   cursor: pointer;
   flex-shrink: 0;
 }
 
 .todo-text {
   flex: 1;
-  font-size: 0.9rem;
-  transition: all var(--transition-fast);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
 }
 
 .todo-delete {
   background: none;
   border: none;
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   cursor: pointer;
   padding: 2px 6px;
   border-radius: 4px;
-  transition: all var(--transition-fast);
+  transition: color var(--transition-fast);
 }
 
 .todo-delete:hover {
   color: var(--imperative-color);
-  background: var(--imperative-dim);
 }
 
 .todo-count {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
 }
 
-/* ========== MOBILE RESPONSIVE ========== */
+/* Mobile */
 @media (max-width: 600px) {
-  /* Counter */
-  .demo-counter .count-display {
-    font-size: 2.2rem;
-  }
+  .demo-counter .count-display { font-size: 2.2rem; }
 
-  .demo-counter .counter-buttons button {
-    padding: var(--space-sm) var(--space-md);
-    font-size: 0.95rem;
-    min-height: 44px; /* touch target */
-  }
-
-  /* Filter */
-  .demo-filter .filter-input {
-    font-size: 1rem; /* prevent iOS zoom */
-    min-height: 44px;
-    padding: var(--space-sm) var(--space-md);
-  }
-
-  .demo-filter .filter-list {
-    max-height: 130px;
-  }
-
-  /* Form */
-  .demo-form .form-input {
-    font-size: 1rem; /* prevent iOS zoom */
-    min-height: 44px;
-  }
-
-  .demo-form .form-submit {
-    min-height: 44px;
-    font-size: 1rem;
-  }
-
-  /* Todo */
+  .demo-counter .counter-buttons button,
+  .demo-form .form-input,
+  .demo-filter .filter-input,
   .todo-input {
-    font-size: 1rem; /* prevent iOS zoom */
+    font-size: 1rem;
     min-height: 44px;
   }
 
-  .todo-add-btn {
-    width: 44px;
-    height: 44px;
-    font-size: 1.3rem;
-  }
+  .demo-form .form-submit,
+  .todo-add-btn { min-height: 44px; }
+  .todo-add-btn { width: 44px; height: 44px; }
 
-  .todo-list {
-    max-height: 160px;
-  }
-
-  .todo-item {
-    padding: var(--space-sm);
-    min-height: 40px;
-  }
-
-  .todo-checkbox {
-    width: 20px;
-    height: 20px;
-  }
-
-  .todo-delete {
-    padding: 4px 10px;
-    min-height: 36px;
-    min-width: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  .todo-checkbox { width: 18px; height: 18px; }
+  .todo-list { max-height: 160px; }
+  .demo-filter .filter-list { max-height: 130px; }
 }

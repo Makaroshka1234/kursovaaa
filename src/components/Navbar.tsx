@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             id="nav-home"
           >
-            <span className="nav-link-icon">🏠</span>
+            <span className="nav-link-icon"></span>
             Головна
           </NavLink>
           <NavLink
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             id="nav-tasks"
           >
-            <span className="nav-link-icon">⚡</span>
+            <span className="nav-link-icon"></span>
             Задачі
           </NavLink>
           <NavLink
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             id="nav-comparison"
           >
-            <span className="nav-link-icon">📊</span>
+            <span className="nav-link-icon"></span>
             Порівняння
           </NavLink>
         </div>

@@ -2,9 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 10, 26, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(13, 13, 18, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 60px;
 }
 
 .navbar-logo {
@@ -20,88 +20,73 @@
   align-items: center;
   gap: var(--space-sm);
   text-decoration: none;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
   color: var(--text-primary);
-  transition: transform var(--transition-fast);
+  letter-spacing: -0.02em;
+  transition: opacity var(--transition-fast);
 }
 
 .navbar-logo:hover {
-  transform: scale(1.03);
+  opacity: 0.8;
 }
 
 .logo-icon {
-  font-size: 1.5rem;
-  animation: spin-slow 8s linear infinite;
-}
-
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  font-size: 1.2rem;
 }
 
 .logo-text {
-  font-size: 1.1rem;
-  letter-spacing: -0.02em;
+  font-size: 1rem;
 }
 
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
+  gap: 2px;
 }
 
 .nav-link {
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
-  padding: var(--space-sm) var(--space-md);
-  border-radius: var(--radius-full);
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
   text-decoration: none;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-weight: 500;
-  font-size: 0.9rem;
-  transition: all var(--transition-base);
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
   border: 1px solid transparent;
 }
 
 .nav-link:hover {
-  color: var(--text-primary);
-  background: var(--bg-glass);
-  border-color: var(--border-color);
+  color: var(--text-secondary);
+  background: var(--bg-card);
 }
 
 .nav-link.active {
   color: var(--text-primary);
-  background: var(--accent-purple-dim);
-  border-color: rgba(168, 85, 247, 0.3);
+  background: var(--bg-card);
+  border-color: var(--border-color);
 }
 
 .nav-link-icon {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
   .navbar-inner {
-    height: 56px;
+    height: 52px;
   }
 
   .logo-text {
-    font-size: 0.95rem;
-  }
-
-  .navbar-links {
-    gap: 2px;
+    font-size: 0.9rem;
   }
 
   .nav-link {
-    padding: 6px 10px;
-    font-size: 0.78rem;
+    padding: 6px 8px;
+    font-size: 0.82rem;
     gap: 4px;
-  }
-
-  .nav-link-icon {
-    font-size: 0.95rem;
   }
 }
 
@@ -115,7 +100,6 @@
   }
 
   .nav-link {
-    padding: 8px 10px;
-    font-size: 1rem;
+    padding: 7px 9px;
   }
 }
